@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase Blog</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="/">FirebaseChat</a>
+
+        <div>
+          <a
+            href="/auth/profile.html"
+            title="Przejdź do ustawień profilu"
+            class="me-3"
+          >
+            <img class="img-avatar" src="./../mario.png" alt="Mario" />
+          </a>
+          <button class="btn btn-warning">Wyloguj się</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container mt-5 mb-5">
+      <h2>Profile</h2>
+      <form id="userProfileForm">
+        <div class="mb-3">
+          <label class="form-label">Display name</label>
+          <input class="form-control" type="text" name="displayName" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Profile picture</label>
+          <input
+            class="form-control"
+            type="file"
+            name="profilePicture"
+            accept=".png,.jpg,.webp,.jpeg"
+          />
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </form>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

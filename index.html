@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase Chat</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="/">FirebaseChat</a>
+
+        <div>
+          <a
+            href="/auth/profile.html"
+            title="Przejdź do ustawień profilu"
+            class="me-3"
+          >
+            <img class="img-avatar" src="./mario.png" alt="Mario" id="avatar" />
+          </a>
+          <button class="btn btn-warning">Wyloguj się</button>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <ul class="list-group" id="chat"></ul>
+      <form id="sendForm" class="d-flex input-group" validate>
+        <input
+          class="form-control"
+          name="content"
+          type="text"
+          placeholder="Wpisz wiadomość"
+          required
+        />
+        <button type="submit" class="btn btn-primary">Wyślij</button>
+      </form>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
